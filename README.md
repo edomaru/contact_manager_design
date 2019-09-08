@@ -1,3 +1,6 @@
-# Simple Contact Manager
+# Contact Manager Html tempalte
 
-This is simple contact manager application
+This is a simple contact manager HTML template for my Udemy Courses
+
+- [Laravel 5 AJAX] (https://www.udemy.com/course/learn-laravel-by-doing/)
+- [Rails 5 Masterclass] (https://www.udemy.com/course/rails-5-masterclass/)
