@@ -21,89 +21,81 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand text-uppercase" href="#">            
+        <a class="navbar-brand text-uppercase" href="#">            
             My contact
-          </a>
-        </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            
         <!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <div class="nav navbar-right navbar-btn">
-            <a href="form.html" class="btn btn-default">
-              <i class="glyphicon glyphicon-plus"></i> 
-              Add Contact
-            </a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="form.html" class="btn btn-outline-primary">Add New</a></li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <!-- content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">All Contact <span class="badge">10</span></a>
-            <a href="" class="list-group-item">Family <span class="badge">4</span></a>
-            <a href="" class="list-group-item">Friends <span class="badge">3</span></a>
-            <a href="" class="list-group-item">Other <span class="badge">3</span></a>
-          </div>
-        </div><!-- /.col-md-3 -->
-
-        <div class="col-md-9">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <strong>Add Contact</strong>
-            </div>           
-            <div class="panel-body">
-              <div class="form-horizontal">
+    <main class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">All Contact <span class="badge badge-warning badge-pill">14</span></a>
+              <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Family <span class="badge badge-pill badge-warning">4</span></a>
+              <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Friends <span class="badge badge-pill badge-warning">3</span></a>
+              <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Other <span class="badge badge-pill badge-warning">3</span></a>
+            </div>
+          </div><!-- /.col-md-3 -->
+  
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <strong>Add Contact</strong>
+              </div>           
+              <div class="card-body">
                 <div class="row">
-                  <div class="col-md-8">
-                    <div class="form-group">
-                      <label for="name" class="control-label col-md-3">Name</label>
+                  <div class="col-md-9">
+                    <div class="form-group row">
+                      <label for="name" class="col-md-3 col-form-label">Name</label>
                       <div class="col-md-8">
                         <input type="text" name="name" id="name" class="form-control">
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="company" class="control-label col-md-3">Company</label>
+                    <div class="form-group row">
+                      <label for="company" class="col-md-3 col-form-label">Company</label>
                       <div class="col-md-8">
                         <input type="text" name="company" id="company" class="form-control">
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="email" class="control-label col-md-3">Email</label>
+                    <div class="form-group row">
+                      <label for="email" class="col-md-3 col-form-label">Email</label>
                       <div class="col-md-8">
                         <input type="text" name="email" id="email" class="form-control">
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="phone" class="control-label col-md-3">Phone</label>
+                    <div class="form-group row">
+                      <label for="phone" class="col-md-3 col-form-label">Phone</label>
                       <div class="col-md-8">
                         <input type="text" name="phone" id="phone" class="form-control">
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="name" class="control-label col-md-3">Address</label>
+                    <div class="form-group row">
+                      <label for="name" class="col-md-3 col-form-label">Address</label>
                       <div class="col-md-8">
                         <textarea name="address" id="address" rows="3" class="form-control"></textarea>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="group" class="control-label col-md-3">Group</label>
+                    <div class="form-group row">
+                      <label for="group" class="col-md-3 col-form-label">Group</label>
                       <div class="col-md-5">
                         <select name="group" id="group" class="form-control">
                           <option value="">Select group</option>
@@ -113,44 +105,42 @@
                         </select>
                       </div>
                       <div class="col-md-3">
-                        <a href="#" id="add-group-btn" class="btn btn-default btn-block">Add Group</a>
+                        <a href="#" id="add-group-btn" class="btn btn-outline-secondary btn-block">Add Group</a>
                       </div>
                     </div>
-                    <div class="form-group" id="add-new-group">
-                      <div class="col-md-offset-3 col-md-8">
-                        <div class="input-group">
-                          <input type="text" name="new_group" id="new_group" class="form-control">
-                          <span class="input-group-btn">
-                            <a href="#" class="btn btn-default">
-                              <i class="glyphicon glyphicon-ok"></i>
-                            </a>
-                          </span>
+                    <div class="form-group row" >
+                      <div class="offset-md-3 col-md-8">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" name="group_id" placeholder="Enter group name" aria-label="Enter group name" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="fileinput fileinput-new" data-provides="fileinput">
-                      <div class="fileinput-new thumbnail" style="width: 150px; height: 150px;">
-                        <img src="http://placehold.it/150x150" alt="Photo">
+                      <div class="fileinput-new img-thumbnail" style="width: 150px; height: 150px;">
+                        <img src="http://via.placeholder.com/150x150"  alt="...">
                       </div>
-                      <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
-                      <div class="text-center">
-                        <span class="btn btn-default btn-file"><span class="fileinput-new">Choose Photo</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                      <div class="fileinput-preview fileinput-exists img-thumbnail" style="max-width: 150px; max-height: 150px;"></div>
+                      <div class="mt-2">
+                        <span class="btn btn-outline-secondary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <a href="#" class="btn btn-outline-secondary fileinput-exists" data-dismiss="fileinput">Remove</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="panel-footer">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="row">
-                    <div class="col-md-offset-3 col-md-6">
-                      <button type="submit" class="btn btn-primary">Save</button>
-                      <a href="#" class="btn btn-default">Cancel</a>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="row">
+                      <div class="col-md-offset-3 col-md-6">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a href="#" class="btn btn-outline-secondary">Cancel</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -159,11 +149,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jasny-bootstrap.min.js"></script>
     <script>
